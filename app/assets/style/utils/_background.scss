@@ -1,0 +1,5 @@
+.bg-lg-light {
+  @include media-breakpoint-up(lg) {
+    background-color: $light !important;
+  }
+}

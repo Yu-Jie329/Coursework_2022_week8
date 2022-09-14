@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Paytone+One&family=Squada+One&display=swap');
+
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "./helpers/utilities";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+//全域
+@import "./base/base";
+
+@import "./utils/mixin";
+@import "./utils/utilities";
+
+@import "./components/hover";
+@import "./components/buttons";
+
+@import './layout/layout';
+@import './layout/index.scss';
+@import './pages/artwork';
+
+@import './vendor/swiper';

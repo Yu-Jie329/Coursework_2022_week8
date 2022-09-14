@@ -1,0 +1,16 @@
+.mb-ns {
+  margin-bottom: -1px !important;
+}
+.me-ns {
+  margin-right: -1px !important;
+}
+.mb-lg-ns {
+  @include media-breakpoint-up(lg) {
+    margin-bottom: -1px !important;
+  }
+}
+.mb-lg-n7 {
+  @include media-breakpoint-up(lg) {
+    margin-bottom: -48px !important;
+  }
+}

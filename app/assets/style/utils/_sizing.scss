@@ -1,0 +1,43 @@
+//width
+.w-lg-fit {
+    @include media-breakpoint-up(lg) {
+      width: fit-content !important;
+    }
+  }
+  .w-lg-100 {
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+    }
+  }
+  .w-md-100 {
+    @include media-breakpoint-up(md) {
+      width: 100%;
+    }
+  }
+  .w-lg-43 {
+    @include media-breakpoint-up(lg) {
+      width: 43%;
+    }
+  }
+  .w-lg-56 {
+    @include media-breakpoint-up(lg) {
+      width: 56.9%;
+    }
+  }
+  .w-lg-25 {
+    @include media-breakpoint-up(lg) {
+      width: 25% !important;
+    }
+  }
+
+  //hight
+.h-md-100 {
+    @include media-breakpoint-up(md) {
+      height: 100%;
+    }
+  }
+  .h-lg-100 {
+    @include media-breakpoint-up(lg) {
+      height: 100%;
+    }
+  }

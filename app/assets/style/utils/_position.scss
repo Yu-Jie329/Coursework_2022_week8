@@ -1,0 +1,15 @@
+.position-md-absolute {
+  @include media-breakpoint-up(md) {
+    position: absolute;
+  }
+}
+.position-lg-absolute {
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+  }
+}
+
+.bottom-10 {
+  bottom: 10%;
+}
+  
