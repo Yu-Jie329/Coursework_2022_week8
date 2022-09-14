@@ -1,10 +1,126 @@
----
-title: 系列作品
-layout: ./app/layout.ejs
-engine: ejs
-current: artWorks
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>系列作品</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light py-0">
+      <div class="container-fluid container-lg px-0">
+        <a class="navbar-brand m-0  py-3 py-lg-5" href="index.html">
+          <img src="./assets/images/logo.svg" alt="logo" class="ps-2 ps-lg-0">
+        </a>
+        <div class="d-flex">
+          <a href="#" class="nav-link d-lg-none d-block py-3 px-2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <!-- <i class="fa-solid fa-xmark"></i> -->
+          </a>
+          <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars border-0 py-3 px-2 "></i>
+          </button>
+        </div>
+       
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+          <ul class="navbar-nav align-items-center text-center bg-white bg-lg-light px-2 px-lg-0">
+            <li class="nav-item d-none d-lg-block border-lg-start">
+              <form class="d-flex align-items-center">
+                <input class="form-control border-0 bg-transparent ps-7 py-lg-6" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search">
+                <a href="#" class="nav-link px-0 px-lg-7 py-4 py-lg-6">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+              </form>
+              <!-- 搜尋 -->
+            </li>
+            <li class="nav-item border-lg-start border-bottom w-100 w-lg-fit m-0 mb-lg-ns">
+              <a class="nav-link active fs-5 fs-lg-6 fw-bold px-0 px-lg-7 py-4 py-lg-6" aria-current="page" href="explore.html">探索</a>
+            </li>
+            <li class="nav-item border-lg-start w-100 w-lg-fit">
+              <a class="nav-link fs-5 fs-lg-6 fw-bold px-0 px-lg-7 py-4 py-lg-6" href="#">市值</a>
+            </li>
+            <li class="nav-item border-lg-start d-block w-100 w-lg-fit py-0 mb-4 mb-lg-0">
+              <a class="nav-link d-block ps-0 ps-lg-7 py-0 py-lg-10" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <span class="d-lg-none fs-5 fs-lg-6 btn btn-primary text-white border py-2 w-100">連結錢包</span>
+                <i class="fa-solid fa-wallet d-none d-lg-block"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+        <!-- Modal 連結你的錢包 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen-sm-down modal-dialog-centered ">
+            <div class="modal-content">
+              <div class="modal-header px-2 position-relative">
+                <h5 class="modal-title fs-4 mx-auto" id="exampleModalLabel">連結你的錢包</h5>
+                <button type="button" class="btn-close d-block d-md-none position-absolute bottom-10 end-0 translate-middle" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body px-2 px-md-3 py-4">
+                <div class="container px-0">
+                  <ul class="row gx-2">
+                    <li class="col-md-6 mb-1">
+                      <a href="#" class="d-flex align-items-center text-black p-3 border btn-hover-choose">
+                        <img src="./assets/images/logo/connect01.png" alt="connect01" class="me-3" style="width: 16px; height: 16px;">
+                        <p class="font-squada">MetaMask</p>
+                      </a>
+                    </li>
+                    <li class="col-md-6 mb-1">
+                      <a href="#" class="d-flex align-items-center text-black p-3 border btn-hover-choose">
+                        <img src="./assets/images/logo/connect02.png" alt="connect02" class="me-3" style="width: 16px; height: 16px;">
+                        <p class="font-squada">Coinbase Wallet</p>
+                      </a>
+                    </li>
+                    <li class="col-md-6 mb-1">
+                      <a href="#" class="d-flex align-items-center text-black p-3 border btn-hover-choose">
+                        <img src="./assets/images/logo/connect03.png" alt="connect03" class="me-3" style="width: 16px; height: 16px;">
+                        <p class="font-squada">WalletConnect</p>
+                      </a>
+                    </li>
+                    <li class="col-md-6 mb-1">
+                      <a href="#" class="d-flex align-items-center text-black p-3 border btn-hover-choose">
+                        <img src="./assets/images/logo/connect04.png" alt="connect04" class="me-3" style="width: 16px; height: 16px;">
+                        <p class="font-squada">Phantom</p>
+                      </a>
+                    </li>
+                    <li class="col-md-6 mb-1">
+                      <a href="#" class="d-flex align-items-center text-black p-3 border btn-hover-choose">
+                        <img src="./assets/images/logo/connect05.png" alt="connect05" class="me-3" style="width: 16px; height: 16px;">
+                        <p class="font-squada">Glow</p>
+                      </a>
+                    </li>
+                    <li class="col-md-6">
+                      <a href="#" class="d-flex align-items-center text-black p-3 border btn-hover-choose">
+                        <img src="./assets/images/logo/connect06.png" alt="connect06" class="me-3" style="width: 16px; height: 16px;">
+                        <p class="font-squada">Fortmatic</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class=" px-0 py-0 py-md-4">
+                <div class="d-grid gap-2 col-md-4 col-12 mx-auto">
+                  <button class="btn btn-primary border text-white py-md-1 py-2" type="button">連結錢包</button>
+                </div>
+
+                <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button class="btn btn-primary border text-white px-md-7 py-md-1 py-2" type="button">連結錢包</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+    
 <main class="bg-light">
     <section class="pt-4 pt-lg-6 pb-6 pb-lg-8">
         <div class="container-fluid container-lg">
@@ -279,3 +395,18 @@ current: artWorks
           </div>
     </section>
 </main>
+
+    <footer class="bg-light border-top pt-1">
+      <div class="border-top border-4 py-4 text-center ">
+        <p>© ART NFT. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
